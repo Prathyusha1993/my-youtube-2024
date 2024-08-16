@@ -8,9 +8,12 @@ const slideAppSlice = createSlice({
     reducers:{
         toggleMenu: (state) => {
             state.isMenuOpen = !state.isMenuOpen;
+        },
+        closeMenu: (state) => {
+            state.isMenuOpen = false;
         }
     }
 });
 
 export default slideAppSlice.reducer;
-export const { toggleMenu } = slideAppSlice.actions;
+export const { toggleMenu, closeMenu } = slideAppSlice.actions;

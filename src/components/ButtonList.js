@@ -9,8 +9,8 @@ const ButtonList = () => {
   return (
     <div className='flex'>
       <div className='m-5 cursor-pointer rounded-full bg-gray-300 p-3'><GrFormPrevious /></div>
-      {buttonList.map(button => (
-          <Button name={button} />
+      {buttonList.map((button, index) => (
+          <Button key={index} name={button} />
       ))}
       <div className='m-5 cursor-pointer rounded-full bg-gray-300 p-3'><GrFormNext /> </div>
     </div>

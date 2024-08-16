@@ -1,5 +1,18 @@
 # Getting Started with Create React App
 
+
+/* 
+* Debouncing:
+* typing slow = 200ms
+* typing fast = 30ms
+
+* Performance
+    - iphone pro max = 14 letters * 1000 (if 1000 peoaple are searching it makes 14000 calls )
+        -with debouncing it makes 3 * 1000 - 3000
+* debouncing with 200ms
+    - if difference between 2 keys strokes is 200ms -decline api call, >200ms make api call
+*/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

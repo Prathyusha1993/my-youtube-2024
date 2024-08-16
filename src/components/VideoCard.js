@@ -1,7 +1,7 @@
 import React from 'react'
 
 const VideoCard = ({info}) => {
-    console.log(info);
+    // console.log(info);
     const {snippet, statistics} = info;
     const {channelTitle, thumbnails, title} = snippet;
 
@@ -13,6 +13,15 @@ const VideoCard = ({info}) => {
             <li>{channelTitle}</li>
             <li>{statistics.viewCount} views</li>
         </ul>
+    </div>
+  )
+};
+
+//higher order component example:
+export const AdVideoCard = ({info}) => {
+  return (
+    <div className='p-1 m-1 border-red-900'>
+      <VideoCard info={info} />
     </div>
   )
 }
