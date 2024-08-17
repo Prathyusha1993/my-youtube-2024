@@ -10,7 +10,8 @@ const Sidebar = () => {
   return (
     <div className='p-5 w-48 shadow-lg'>
         <ul>
-            <li><Link>Home</Link></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/demo'>Demo</Link></li>
             <li>Shorts</li>
             <li>Videos</li>
             <li>Live</li>
